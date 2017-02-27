@@ -1,0 +1,46 @@
+{
+  "name": "commitchange-widgets-examples",
+  "version": "0.0.1",
+  "description": "examples of widgets using the commitchange api",
+  "main": "build.js",
+  "scripts": {
+    "test": "browserify -t es2040 test/client | tape-run --render='faucet'",
+    "budo": "budo index.js --live -- -t babelify",
+    "babel": "babel index.js -o build.js",
+    "postcss": "postcss -c postcss.js -w -l"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommitChange/examples.git"
+  },
+  "keywords": [
+    "commitchange"
+  ],
+  "author": "Yutaka Houlette <yutakahoulette@gmail.com> (http://yutakahoulette.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CommitChange/examples/issues"
+  },
+  "homepage": "https://github.com/CommitChange/examples#readme",
+  "dependencies": {
+    "flimflam": "0.1.1",
+    "flyd-ajax": "^0.2.0",
+    "moment": "2.17.1",
+    "ramda": "0.23.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "14.1.0",
+    "budo": "^9.4.7",
+    "commons.css": "0.0.15",
+    "cssnano": "3.10.0",
+    "data-tooltip": "0.0.1",
+    "es2040": "1.2.4",
+    "highlight.js": "9.7.0",
+    "normalize.css": "5.0.0",
+    "postcss-cssnext": "2.9.0",
+    "postcss-import": "9.1.0",
+    "tape": "4.6.3",
+    "tape-run": "2.2.1"
+  }
+}

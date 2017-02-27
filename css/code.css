@@ -1,0 +1,18 @@
+.hljs-tag {
+  color: rgba(0,0,0,0.4);
+}
+
+.hljs-name {
+  color: black;
+}
+
+.hljs-selector-class,
+.hljs-attr {
+  color: green;
+}
+
+.hljs-attribute, 
+.hljs-string {
+  color: blue;
+}
+
