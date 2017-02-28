@@ -1,0 +1,16 @@
+.progressBar { background: var(--grey-medium) }
+.progressBar span { background: var(--green); }
+
+.progressBar-vertical {
+  height: 400px;
+  width: .5em;
+  position: relative;
+}
+
+
+.progressBar-vertical span {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+

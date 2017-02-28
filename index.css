@@ -1,20 +1,14 @@
 @import 'normalize.css';
 @import 'commons.css';
 @import 'css/code';
-
+@import 'css/progress-bar';
 
 :root {
-  --grey-light: #fbfbfb;
+  --grey-light: #f1f1f1;
   --grey-medium: #d0d0d0;
-  --blue: #42b3df; 
   --black: rgba(0,0,0,0.8);
+  --green: #50a14f;  
 }
-
-a {
-  text-decoration: underline;
-  color: var(--black); 
-}
-
 
 body {
   background: var(--grey-light);
@@ -23,10 +17,22 @@ body {
   font-family:  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
-p { line-height: 1.6; }
-
 section { background: white; }
 
-.progressBar { background: var(--grey-medium) }
-.progressBar span { background: var(--blue); }
+p { line-height: 1.6; }
+
+a {
+  text-decoration: underline;
+  color: var(--black); 
+}
+
+label { margin-bottom: .5em; }
+
+pre {
+  background: color(var(--grey-light) alpha(50%));
+  padding: 1em;
+  display:block;
+  overflow-x:auto;
+  margin-bottom: 3em;
+}
 
